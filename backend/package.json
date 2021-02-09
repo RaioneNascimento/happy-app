@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Raione Nascimento",
+  "author": "Raione Nascimento <raionebonfim@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only src/server.ts -ignore-watch node_modules",
+    "dev:server": "ts-node-dev src/server.ts --transpile-only --ignore-watch node_modules --respawn",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
